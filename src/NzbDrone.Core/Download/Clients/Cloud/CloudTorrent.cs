@@ -31,32 +31,30 @@ namespace NzbDrone.Core.Download.Clients.Cloud
 
         public override IEnumerable<DownloadClientItem> GetItems()
         {
-            throw new NotImplementedException();
+            return new List<DownloadClientItem>();
         }
 
         public override void RemoveItem(string downloadId, bool deleteData)
         {
-            throw new NotImplementedException();
         }
 
         public override DownloadClientInfo GetStatus()
         {
-            throw new NotImplementedException();
+            return new DownloadClientInfo();
         }
 
         protected override void Test(List<ValidationFailure> failures)
         {
-            throw new NotImplementedException();
         }
 
         protected override string AddFromMagnetLink(RemoteEpisode remoteEpisode, string hash, string magnetLink)
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         protected override string AddFromTorrentFile(RemoteEpisode remoteEpisode, string hash, string filename, byte[] fileContent)
         {
-            throw new NotImplementedException();
+            return null;
         }
     }
 }
